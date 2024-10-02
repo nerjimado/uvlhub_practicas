@@ -46,7 +46,8 @@ jobs:
     
     - name: Security analysis of dependencies
       run: |
-        pyhton -m pip-audit
+        pip install pip-audit
+        pip-audit
 
     - name: Upload coverage to Codacy
       run: |
